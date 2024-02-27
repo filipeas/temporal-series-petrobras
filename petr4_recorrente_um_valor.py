@@ -5,6 +5,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM
 from sklearn.preprocessing import MinMaxScaler
 
+# https://br.financas.yahoo.com/quote/PETR4.SA?.tsrc=fin-srch
 base = pd.read_csv('petr4.csv')
 base = base.dropna()
 base_treinamento = base.iloc[:, 1:2].values
